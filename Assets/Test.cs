@@ -25,7 +25,7 @@ public class Boss{
     public void Magic(int MPconsume) {
         
         
-        if (mp > MPconsume){
+        if (mp >= MPconsume){
             // mpが足りる時,残りのMPを減らす
             this.mp -= MPconsume;
             Debug.Log("魔法攻撃をした。残りMPは" + mp);
